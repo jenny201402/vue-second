@@ -1,21 +1,39 @@
 <template>
   <div class="play">
-    <router-link to="/Play/Playss">playss</router-link>
-    <router-link to="/Play/Link">Link</router-link>
+    <p>
+         <router-link to="/Play/Playss"><span>playss</span></router-link>
+    </p>
+    <p>
+        <router-link to="/Play/Link"><span>Link</span></router-link>
+    </p>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
   import Link from '@/components/Link'
+  import Playss from '@/components/Playss'
     export default {
         name: "Play",
       components :{
-          Link
+        Playss,Link
       }
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  $color:red;
+  $libColor:purple;
+  .play{
+    font-size: 20px;
+    color:$color;
+    p{
+      font-size: 20px;
+      color:red;
+      span{
+        text-decoration: underline;
+        color:$color;
+      }
+    }
+  }
 </style>
