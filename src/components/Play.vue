@@ -22,18 +22,5 @@
 </script>
 
 <style scoped lang="scss">
-  $color:red;
-  $libColor:purple;
-  .play{
-    font-size: 20px;
-    color:$color;
-    p{
-      font-size: 20px;
-      color:red;
-      span{
-        text-decoration: underline;
-        color:$color;
-      }
-    }
-  }
+  @import '../common/common.scss';
 </style>

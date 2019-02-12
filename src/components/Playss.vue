@@ -1,5 +1,8 @@
 <template>
-  <div class="playss">playss</div>
+  <div class="playss">
+    playss
+
+  </div>
 </template>
 
 <script>
