@@ -1,11 +1,7 @@
 <template>
   <div class="play">
-    <p>
-         <router-link to="/Play/Playss"><span>playss</span></router-link>
-    </p>
-    <p>
-        <router-link to="/Play/Link"><span>Link</span></router-link>
-    </p>
+    <router-link to="/Play/Playss"><span>playss</span></router-link>
+    <router-link to="/Play/Link"><span>Link</span></router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -13,12 +9,13 @@
 <script>
   import Link from '@/components/Link'
   import Playss from '@/components/Playss'
-    export default {
-        name: "Play",
-      components :{
-        Playss,Link
-      }
+
+  export default {
+    name: "Play",
+    components: {
+      Playss, Link
     }
+  }
 </script>
 
 <style scoped lang="scss">

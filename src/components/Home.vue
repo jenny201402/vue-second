@@ -1,5 +1,7 @@
 <template>
-    <div class="home">homess</div>
+    <div class="home">
+      <el-button @click="visible = true">Button</el-button>
+    </div>
 </template>
 
 <script>

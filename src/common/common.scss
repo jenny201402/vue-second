@@ -3,12 +3,8 @@ $libColor:purple;
 .play{
   font-size: 20px;
   color:$color;
-  p{
-    font-size: 20px;
-    color:$libColor;
     span{
       text-decoration: underline;
       color:$libColor;
     }
   }
-}
