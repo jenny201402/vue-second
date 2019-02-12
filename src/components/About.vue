@@ -8,6 +8,6 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import '../common/common.scss';
 </style>

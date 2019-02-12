@@ -1,7 +1,9 @@
 <template>
   <div class="play">
-    <router-link to="/Play/Playss"><span>playss</span></router-link>
-    <router-link to="/Play/Link"><span>Link</span></router-link>
+    <li>
+      <router-link to="/Play/Playss"><span type="button">Registered</span></router-link>
+      <router-link to="/Play/Link"><span type="button">Login</span></router-link>
+    </li>
     <router-view></router-view>
   </div>
 </template>
