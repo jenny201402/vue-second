@@ -1,11 +1,13 @@
 <template>
-  <div id="app" class="app">
+  <div id="app" style="background:rosybrown;height:100%;">
     <!--<img src="./assets/logo.png">-->
-    <p>
-      <span><router-link to="/Home">Home</router-link></span>
-      <span><router-link to="/Play">Play</router-link></span>
-      <span><router-link to="/About">About</router-link></span>
-    </p>
+    <div class="app">
+      <p>
+        <span><router-link to="/Home">Home</router-link></span>
+        <span><router-link to="/Play">Play</router-link></span>
+        <span><router-link to="/About">About</router-link></span>
+      </p>
+    </div>
     <router-view/>
   </div>
 </template>
@@ -18,12 +20,28 @@ export default {
   name: 'App',
   components :{
     Home,Play,About
+  },
+  beforeCreate: function() {
+    document.getElementsByTagName("body")[0].className="active";
+  },
+  data(){
+    return{
+      msg:'hello vue',
+      customizeClass: 'active'
+    }
+  },
+  beforeDestroy: function() {
+    document.body.removeAttribute("class","active");
   }
 }
+
 </script>
 
 <style lang="scss" scoped>
   @import 'common/common.scss';
+  body{
+    margin:0;
+  }
 /*#app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

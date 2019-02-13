@@ -8,12 +8,24 @@
           :value="item.value">
         </el-option>
       </el-select>
+      <navigative v-bind:href="url" class="nav-link">
+        <slot></slot>
+      </navigative>
+      <rest v-bind:href="url" class="nav-link2">
+        <slot></slot>
+      </rest>
     </div>
 </template>
 
 <script>
+  import navigative from '@/components/navigative';
+  import rest from '@/components/rest';
     export default {
         name: "Home",
+      components :{
+        navigative,rest
+
+      },
       data() {
         return {
           options: [{

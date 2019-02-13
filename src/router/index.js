@@ -6,6 +6,9 @@ import Play from '@/components/Play'
 import About from '@/components/About'
 import Link from '@/components/Link'
 import Playss from '@/components/Playss'
+import header from '../../static/page/header'
+import main from '../../static/page/main'
+import footer from '../../static/page/footer'
 
 Vue.use(Router)
 
@@ -46,6 +49,21 @@ export default new Router({
       name: 'About',
       component: About
     },
+    {
+      path: '/header',
+      name: 'header',
+      component:()=> import('../../static/page/header')
+    },
+    {
+      path: '/main',
+      name: 'main',
+      component:()=> import('../../static/page/header')
+    },
+    {
+      path: '/footer',
+      name: 'footer',
+      component:()=> import('../../static/page/header')
+    }
    /* {
       path: '/Link',
       name: 'Link',
