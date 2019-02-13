@@ -1,9 +1,7 @@
 <template>
-  <div url="/header">
-    <div>sdf</div>
-    <div>sdf</div>
-    <div>sdf</div>
-  </div>
+    <div>
+      header
+    </div>
 </template>
 
 <script>

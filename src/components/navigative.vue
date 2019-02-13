@@ -1,8 +1,7 @@
 <template>
   <div url="/profile">
-    <div>nav</div>
-    <div>iga</div>
-    <div>tive</div>
+    <div>navigate</div>
+    <div>navigate</div>
   </div>
 </template>
 

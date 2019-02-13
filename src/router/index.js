@@ -57,12 +57,12 @@ export default new Router({
     {
       path: '/main',
       name: 'main',
-      component:()=> import('../../static/page/header')
+      component:()=> import('../../static/page/main')
     },
     {
       path: '/footer',
       name: 'footer',
-      component:()=> import('../../static/page/header')
+      component:()=> import('../../static/page/footer')
     }
    /* {
       path: '/Link',

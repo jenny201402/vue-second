@@ -1,5 +1,6 @@
 <template>
-  <div id="app" style="background:rosybrown;height:100%;">
+  <!--<div id="app" style="background:rosybrown;height:100%;">-->
+  <div id="app">
     <!--<img src="./assets/logo.png">-->
     <div class="app">
       <p>

@@ -11,15 +11,14 @@
       <navigative v-bind:href="url" class="nav-link">
         <slot></slot>
       </navigative>
-      <rest v-bind:href="url" class="nav-link2">
-        <slot></slot>
-      </rest>
+      <rest></rest>
     </div>
 </template>
 
 <script>
   import navigative from '@/components/navigative';
   import rest from '@/components/rest';
+
     export default {
         name: "Home",
       components :{
