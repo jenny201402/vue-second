@@ -1,0 +1,42 @@
+.play {
+  font-size: 20px;
+  padding: 10px 4px 15px 4px; }
+  .play li {
+    list-style: none;
+    text-align: center; }
+    .play li span {
+      text-decoration: underline;
+      font-weight: normal;
+      padding: 4px 4px 0px 4px;
+      display: inline-block; }
+
+.home {
+  width: 392px;
+  margin: 0 auto; }
+
+.app {
+  width: 392px;
+  margin: 0 auto; }
+  .app p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; }
+    .app p span {
+      padding: 10px 4px 15px 4px;
+      text-align: center;
+      display: inline-block;
+      width: 95px;
+      margin: 0 auto;
+      font-weight: normal;
+      font-size: 23px;
+      font-variant-caps: petite-caps; }
+      .app p span a {
+        color: #333333; }
+
+.about {
+  text-align: center; }
+
+.el-select {
+  width: 392px; }
+
+/*# sourceMappingURL=common.css.map */
