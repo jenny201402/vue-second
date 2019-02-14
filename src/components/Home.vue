@@ -12,7 +12,6 @@
       <slot></slot>
     </navigative>
     <rest></rest>
-    <div id="hook-argument" v-demo:foo.a.b="message"></div>
   </div>
 </template>
 
@@ -48,19 +47,7 @@
       }
     },
   }
-/*  Vue.directive('demo', {
-    bind: function (el, binding, vnode) {
-      var s = JSON.stringify
-      el.innerHTML =
-        'name:' + s(binding.name) + '<br>' + 'value:' + s(binding.value) + '<br>' + 'expression:' + s(binding.expression) + '<br>' + 'argument:' + s(binding.arg) + '<br>' + 'modefiers:' + s(binding.modefiers) + '<br>' + 'vnode keys:' + Object.keys(vnode).join(',')
-    }
-  })
-  new Vue({
-    el: '#hook-argument',
-    data: {
-      message:'hello!'
-    }
-  })*/
+
 </script>
 
 <style scoped>
