@@ -48,7 +48,7 @@
       }
     },
   }
-  Vue.directive('demo', {
+/*  Vue.directive('demo', {
     bind: function (el, binding, vnode) {
       var s = JSON.stringify
       el.innerHTML =
@@ -60,7 +60,7 @@
     data: {
       message:'hello!'
     }
-  })
+  })*/
 </script>
 
 <style scoped>
