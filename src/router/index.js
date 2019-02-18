@@ -6,9 +6,9 @@ import Play from '@/components/Play'
 import About from '@/components/About'
 import Link from '@/components/Link'
 import Playss from '@/components/Playss'
-import header from '../../static/page/header'
-import main from '../../static/page/main'
-import footer from '../../static/page/footer'
+import Header from '../../static/page/Header'
+import Main from '../../static/page/Main'
+import Footer from '../../static/page/Footer'
 
 Vue.use(Router)
 
@@ -50,19 +50,25 @@ export default new Router({
       component: About
     },
     {
-      path: '/header',
-      name: 'header',
-      component:()=> import('../../static/page/header')
+      path: '/Header',
+      name: 'Header',
+      component:()=> import('../../static/page/Header')
+    },
+
+    {
+      path: '/Main',
+      name: 'Main',
+      component:()=> import('../../static/page/Main')
     },
     {
-      path: '/main',
-      name: 'main',
-      component:()=> import('../../static/page/main')
+      path: '/Footer',
+      name: 'Footer',
+      component:()=> import('../../static/page/Footer')
     },
     {
-      path: '/footer',
-      name: 'footer',
-      component:()=> import('../../static/page/footer')
+      path: '/Navigative',
+      name: 'Navigative',
+      component:()=> import('@/components/Navigative')
     }
    /* {
       path: '/Link',

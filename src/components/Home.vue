@@ -16,13 +16,13 @@
 </template>
 
 <script>
-  import navigative from '@/components/navigative';
-  import rest from '@/components/rest';
+  import Navigative from '@/components/Navigative';
+  import Rest from '@/components/Rest';
 
   export default {
     name: "Home",
     components: {
-      navigative, rest
+      Navigative, Rest
 
     },
     data() {
