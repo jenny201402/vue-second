@@ -1,26 +1,30 @@
 <template>
-    <div type="button" id="hook-arguments-example" v-demo=""></div>
+  <div>
+    <div type="button" id="hook-arguments-example" v-demo="message"></div>
+    <Header></Header>
+    <Main></Main>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-  import header from '../../static/page/header';
+  import Header from '../../static/page/Header';
+  import Main from '../../static/page/Main';
+  import Footer from '../../static/page/Footer';
+  import Vue from 'vue'
 
     export default {
-        name: "rest",
+        name: "Rest",
       components :{
-          header
+        Header,Main,Footer
       }
     }
-  Vue.directive('demo', {
+ Vue.directive('demo', {
     bind: function (el, binding, vnode) {
       var s = JSON.stringify;
       el.innerHTML =
         'name: '       + s(binding.name) + '<br>' +
-        'value: '      + s(binding.value) + '<br>' +
-        'expression: ' + s(binding.expression) + '<br>' +
-        'argument: '   + s(binding.arg) + '<br>' +
-        'modifiers: '  + s(binding.modifiers) + '<br>' +
-        'vnode keys: ' + Object.keys(vnode).join(', ')
+        'value: '      + s(binding.value)
     }
   })
 
