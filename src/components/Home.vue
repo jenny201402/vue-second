@@ -12,12 +12,23 @@
       <slot></slot>
     </navigative>
     <rest></rest>
+    <!--<input type="number" placeholder="trust me" v-model="myNum" v-on:input="numChange">-->
+    <input type="number" placeholder="trust me" @blur="numChange" :value="myNum">
+
+<!--    <div id="num">
+      <span>Multiline message is:</span>
+      <p style="white-space: pre-line;">{{ msg }}</p>
+      <br>
+      <textarea v-model="msg" placeholder="add multiple lines"></textarea>
+    </div>-->
+
   </div>
 </template>
 
 <script>
   import Navigative from '@/components/Navigative';
   import Rest from '@/components/Rest';
+  import Vue from 'vue'
 
   export default {
     name: "Home",
@@ -27,6 +38,7 @@
     },
     data() {
       return {
+        myNum: '',
         options: [{
           value: '选项1',
           label: '黄金糕'
@@ -46,8 +58,21 @@
         value: ''
       }
     },
-  }
 
+    methods: {
+      numChange(event){
+        this.myNum = Number(event.target.value).toFixed(2);
+      }
+    }
+  }
+/*var num = 2;
+  alert(num.toFixed(2))*/
+/*  new Vue({
+    el: '#num',
+    data: {
+      msg:[]
+    }
+  })*/
 </script>
 
 <style scoped>
