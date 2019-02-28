@@ -12,8 +12,8 @@
       <slot></slot>
     </navigative>
     <rest></rest>
-    <!--<input type="number" placeholder="trust me" v-model="myNum" v-on:input="numChange">-->
-    <input type="number" placeholder="trust me" @blur="numChange" :value="myNum">
+    <!--<input type="number" placeholder="TRUTH" v-model="myNum" v-on:input="numChange">-->
+    <!--<input type="number" placeholder="TRUTH" @blur="numChange" :value="myNum">-->
 
 <!--    <div id="num">
       <span>Multiline message is:</span>
@@ -60,9 +60,9 @@
     },
 
     methods: {
-      numChange(event){
+    /*  numChange(event){
         this.myNum = Number(event.target.value).toFixed(2);
-      }
+      }*/
     }
   }
 /*var num = 2;

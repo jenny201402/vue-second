@@ -9,6 +9,7 @@ import Playss from '@/components/Playss'
 import Header from '../../static/page/Header'
 import Main from '../../static/page/Main'
 import Footer from '../../static/page/Footer'
+import test from '../../static/page/test'
 
 Vue.use(Router)
 
@@ -33,14 +34,14 @@ export default new Router({
       path: '/Play',
       name: 'Play',
       component: Play,
-      children :[
+      children: [
         {
-          path:'Link',
-          component:Link
+          path: 'Link',
+          component: Link
         },
         {
-          path:'Playss',
-          component:Playss
+          path: 'Playss',
+          component: Playss
         }
       ]
     },
@@ -52,28 +53,38 @@ export default new Router({
     {
       path: '/Header',
       name: 'Header',
-      component:()=> import('../../static/page/Header')
+      component: () => import('../../static/page/Header')
     },
 
     {
       path: '/Main',
       name: 'Main',
-      component:()=> import('../../static/page/Main')
+      component: () => import('../../static/page/Main')
     },
     {
       path: '/Footer',
       name: 'Footer',
-      component:()=> import('../../static/page/Footer')
+      component: () => import('../../static/page/Footer')
+    },
+    {
+      path: '/pickerDate',
+      name: 'pickerDate',
+      component: () => import('../../static/page/pickerDate')
     },
     {
       path: '/Navigative',
       name: 'Navigative',
-      component:()=> import('@/components/Navigative')
+      component: () => import('@/components/Navigative')
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: () => import('../../static/page/test')
     }
-   /* {
-      path: '/Link',
-      name: 'Link',
-      component: Link
-    }*/
+    /* {
+       path: '/Link',
+       name: 'Link',
+       component: Link
+     }*/
   ]
 })
