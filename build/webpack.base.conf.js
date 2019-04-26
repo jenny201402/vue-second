@@ -70,7 +70,7 @@ module.exports = {
         test: /\.scss$/,
         loaders: ['style', 'css', 'sass']
       }
-    ]
+    ],
   },
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
@@ -83,5 +83,5 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
 }

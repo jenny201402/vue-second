@@ -1,7 +1,9 @@
 <template>
     <div>
+      <div>
+        <button v-on:click="count++">you clicked me {{count}} times.</button>
+      </div>
       <div id="components-demo">
-        <button-counter></button-counter>
         <button-counter></button-counter>
         <button-counter></button-counter>
       </div>
@@ -9,20 +11,14 @@
 </template>
 
 <script>
-  import Vue from 'vue'
     export default {
-        name: "Header"
+        name: "Header",
+   data () {
+     return {
+       count:0
+     }
+   }
     }
-    Vue.component('button-counter',{
-      data:function () {
-        return {
-          count:0
-        }
-      },
-       template:'<button v-on:click="count++">you clicked me {{count}} times.</button>'
-  })
-  new Vue({el: '#components-demo'});
-
 </script>
 
 <style scoped>

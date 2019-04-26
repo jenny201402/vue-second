@@ -28,12 +28,13 @@
 <script>
   import Navigative from '@/components/Navigative';
   import Rest from '@/components/Rest';
+  import Layout from '@/components/Layout';
   import Vue from 'vue'
 
   export default {
     name: "Home",
     components: {
-      Navigative, Rest
+      Navigative, Rest,Layout
 
     },
     data() {
@@ -60,9 +61,9 @@
     },
 
     methods: {
-    /*  numChange(event){
+      numChange(event){
         this.myNum = Number(event.target.value).toFixed(2);
-      }*/
+      }
     }
   }
 /*var num = 2;
