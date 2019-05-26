@@ -12,14 +12,12 @@
   import Header from '../../static/page/Header';
   import Main from '../../static/page/Main';
   import Footer from '../../static/page/Footer';
-  import test from '../../static/page/test';
-  import pickerDate from '../../static/page/pickerDate';
   import Vue from 'vue'
 
     export default {
         name: "Rest",
       components :{
-        Header,Main,Footer,test,pickerDate
+        Header,Main,Footer
       }
     }
  Vue.directive('demo', {

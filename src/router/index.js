@@ -11,8 +11,6 @@ import Layout from '@/components/Layout'
 import Header from '../../static/page/Header'
 import Main from '../../static/page/Main'
 import Footer from '../../static/page/Footer'
-import Addel from '../../static/page/Addel'
-// import Slot from '../../static/page/Slot'
 import Formvalidate from '../../static/page/Formvalidate'
 import Breadcrumb from '../../static/view/Breadcrumb/Breadcrumb'
 
@@ -77,11 +75,6 @@ export default new Router({
       component: () => import('../../static/page/Main')
     },
     {
-      path: '/Slot',
-      name: 'Slot',
-      component: () => import('../../static/page/Slot')
-    },
-    {
       path: '/Rest',
       name: 'Rest',
       component: Rest
@@ -91,11 +84,6 @@ export default new Router({
       path: '/Footer',
       name: 'Footer',
       component: () => import('../../static/page/Footer')
-    },
-    {
-      path: '/Addel',
-      name: 'Addel',
-      component: () => import('../../static/page/Addel')
     },
     {
       path: '/Breadcrumb',
