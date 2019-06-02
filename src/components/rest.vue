@@ -28,13 +28,13 @@
         'value: '      + s(binding.value)
     }
   })
-
+/*
   new Vue({
     el: '#hook-arguments-example',
     data: {
       message: 'hello!'
     }
-  })
+  })*/
 </script>
 
 <style scoped>

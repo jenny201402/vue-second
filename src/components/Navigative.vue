@@ -1,8 +1,9 @@
 <template>
   <div url="/profile">
     <div>
-        <div v-for="name in country"></div>
-        <div v-for="put in putInside"></div>
+        <div v-for="ice in combine" v-model="combine">
+          {{ice}}
+        </div>
     </div>
   </div>
 </template>
@@ -21,6 +22,14 @@
                 {name:'arilan'},
                 {name:'arben'},
                 {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
+                {name:'alphalan'},
               ],
             putInside: [
               {put:'1'},
@@ -30,12 +39,24 @@
               {put:'5'},
               {put:'6'},
               {put:'7'},
-            ]
+            ],
+            combine:[],
+
           }
       },
-      methods: {},
+      methods: {
+          getBind(){
+            for(let i = 1; i <= this.country.length; i++){
+              this.combine.push(this.country[i-1].name);
+              if(i % 4 === 0){
+                this.combine.push(this.putInside[i/4 -1].put);
+              }
+            }
+          },
+
+      },
       mounted(){
-          console.log()
+        this.getBind();
       },
     }
 </script>
